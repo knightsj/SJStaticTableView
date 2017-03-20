@@ -451,5 +451,7 @@ typedef NS_ENUM(NSInteger, SSJStaticCellType) {
 >为了方便比较，同组页面的定制和分组是一致的。我们可以看到，定制代码都作用于cell的viewModel上了。
 
 
+----
 
+非常感谢你的阅读，觉得不好请多批评
 
