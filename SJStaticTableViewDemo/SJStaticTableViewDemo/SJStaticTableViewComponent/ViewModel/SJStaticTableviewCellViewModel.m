@@ -26,7 +26,7 @@
     if (self) {        
         _cellHeight = 44;
         _cellID = @"defaultCell";
-        _staticCellType = SSJStaticCellTypeSystemAccessoryDisclosureIndicator;//默认是存在三角箭头的cell
+        _staticCellType = SJStaticCellTypeSystemAccessoryDisclosureIndicator;//默认是存在三角箭头的cell
         _isImageFirst = YES;
         
         //都是默认配置

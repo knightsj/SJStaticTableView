@@ -27,7 +27,7 @@
         
         switch (viewModel.staticCellType)
         {
-            case SSJStaticCellTypeSystemAccessoryDisclosureIndicator:
+            case SJStaticCellTypeSystemAccessoryDisclosureIndicator:
             {
                 [cell configureAccessoryDisclosureIndicatorCellWithViewModel:viewModel];
             }

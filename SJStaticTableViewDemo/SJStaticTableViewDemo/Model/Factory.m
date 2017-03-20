@@ -25,7 +25,7 @@
     vm0.userName = @"J_Knight";
     vm0.userID = @"微信号：xxxxxx";
     vm0.codeImage = [UIImage imageNamed:@"qrcode"];
-    vm0.staticCellType = SSJStaticCellTypeMeAvatar;
+    vm0.staticCellType = SJStaticCellTypeMeAvatar;
     
     SJStaticTableviewSectionViewModel *section0 = [[SJStaticTableviewSectionViewModel alloc] initWithCellViewModelsArray:@[vm0]];
     
@@ -105,7 +105,7 @@
         NSString *message = isON?@"打开夜间模式":@"关闭夜间模式";
         NSLog(@"%@",message);
     };
-    vm7.staticCellType = SSJStaticCellTypeSystemAccessorySwitch;
+    vm7.staticCellType = SJStaticCellTypeSystemAccessorySwitch;
     vm7.identifier = 7;
     
     SJStaticTableviewCellViewModel *vm8 = [[SJStaticTableviewCellViewModel alloc] init];
@@ -149,7 +149,7 @@
     
     // ========== section 3
     SJStaticTableviewCellViewModel *vm6 = [[SJStaticTableviewCellViewModel alloc] init];
-    vm6.staticCellType = SSJStaticCellTypeSystemLogout;
+    vm6.staticCellType = SJStaticCellTypeSystemLogout;
     vm6.cellID = @"logout";
     vm6.identifier = 6;
     

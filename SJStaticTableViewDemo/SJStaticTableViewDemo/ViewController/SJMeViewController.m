@@ -30,13 +30,13 @@
         
         switch (viewModel.staticCellType) {
                 
-            case SSJStaticCellTypeSystemAccessoryDisclosureIndicator:
+            case SJStaticCellTypeSystemAccessoryDisclosureIndicator:
             {
                 [cell configureAccessoryDisclosureIndicatorCellWithViewModel:viewModel];
             }
                 break;
                 
-            case SSJStaticCellTypeMeAvatar:
+            case SJStaticCellTypeMeAvatar:
             {
                 [cell configureMeAvatarTableViewCellWithViewModel:viewModel];
             }

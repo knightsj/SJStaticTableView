@@ -10,16 +10,16 @@
 #import <UIKit/UIKit.h>
 #import "SJConst.h"
 
-typedef NS_ENUM(NSInteger, SSJStaticCellType) {
+typedef NS_ENUM(NSInteger, SJStaticCellType) {
     
     //系统风格的各种cell类型，已封装好，可以直接用
-    SSJStaticCellTypeSystemLogout,                          //退出登录cell（已封装好）
-    SSJStaticCellTypeSystemAccessoryNone,                   //右侧没有任何控件
-    SSJStaticCellTypeSystemAccessorySwitch,                 //右侧是开关
-    SSJStaticCellTypeSystemAccessoryDisclosureIndicator,    //右侧是三角箭头(箭头左侧可以有一个image或者一个label，或者二者都有，根据传入的参数决定)
+    SJStaticCellTypeSystemLogout,                          //退出登录cell（已封装好）
+    SJStaticCellTypeSystemAccessoryNone,                   //右侧没有任何控件
+    SJStaticCellTypeSystemAccessorySwitch,                 //右侧是开关
+    SJStaticCellTypeSystemAccessoryDisclosureIndicator,    //右侧是三角箭头(箭头左侧可以有一个image或者一个label，或者二者都有，根据传入的参数决定)
     
     //需要用户自己添加的自定义cell类型
-    SSJStaticCellTypeMeAvatar,                              //个人页“我”cell
+    SJStaticCellTypeMeAvatar,                              //个人页“我”cell
     
 };
 
@@ -29,7 +29,7 @@ typedef void(^SwitchValueChagedBlock)(BOOL isOn);           //switch开关切换
 
 @interface SJStaticTableviewCellViewModel : NSObject
 
-@property (nonatomic, assign) SSJStaticCellType staticCellType;                  //类型
+@property (nonatomic, assign) SJStaticCellType staticCellType;                  //类型
 
 
 @property (nonatomic, copy)   NSString *cellID;                                  //cell reuser identifier

@@ -29,25 +29,25 @@
         
         switch (viewModel.staticCellType)
         {
-            case SSJStaticCellTypeSystemAccessoryDisclosureIndicator:
+            case SJStaticCellTypeSystemAccessoryDisclosureIndicator:
             {
                 [cell configureAccessoryDisclosureIndicatorCellWithViewModel:viewModel];
             }
                 break;
                 
-            case SSJStaticCellTypeSystemAccessorySwitch:
+            case SJStaticCellTypeSystemAccessorySwitch:
             {
                 [cell configureAccessorySwitchCellWithViewModel:viewModel];
             }
                 break;
                 
-            case SSJStaticCellTypeSystemLogout:
+            case SJStaticCellTypeSystemLogout:
             {
                 [cell configureLogoutTableViewCellWithViewModel:viewModel];
             }
                 break;
                 
-            case SSJStaticCellTypeSystemAccessoryNone:
+            case SJStaticCellTypeSystemAccessoryNone:
             {
                 [cell configureAccessoryNoneCellWithViewModel:viewModel];
             }
