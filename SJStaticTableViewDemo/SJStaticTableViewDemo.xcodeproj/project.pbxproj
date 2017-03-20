@@ -1,0 +1,736 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CBC2D2741E7ED0BD002A5357 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC2D2731E7ED0BD002A5357 /* main.m */; };
+		CBC2D2771E7ED0BD002A5357 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC2D2761E7ED0BD002A5357 /* AppDelegate.m */; };
+		CBC2D27A1E7ED0BD002A5357 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC2D2791E7ED0BD002A5357 /* ViewController.m */; };
+		CBC2D27D1E7ED0BD002A5357 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBC2D27B1E7ED0BD002A5357 /* Main.storyboard */; };
+		CBC2D2821E7ED0BD002A5357 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBC2D2801E7ED0BD002A5357 /* LaunchScreen.storyboard */; };
+		CBC2D28D1E7ED0BD002A5357 /* SJStaticTableViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC2D28C1E7ED0BD002A5357 /* SJStaticTableViewDemoTests.m */; };
+		CBC2D2981E7ED0BD002A5357 /* SJStaticTableViewDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC2D2971E7ED0BD002A5357 /* SJStaticTableViewDemoUITests.m */; };
+		CBC2D2C41E7ED0ED002A5357 /* SJStaticTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC2D2A81E7ED0ED002A5357 /* SJStaticTableViewDataSource.m */; };
+		CBC2D2C51E7ED0ED002A5357 /* arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CBC2D2AA1E7ED0ED002A5357 /* arrow@2x.png */; };
+		CBC2D2C61E7ED0ED002A5357 /* SJStaticTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC2D2AF1E7ED0ED002A5357 /* SJStaticTableView.m */; };
+		CBC2D2C71E7ED0ED002A5357 /* SJStaticTableViewCell+AccessoryDisclosureIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC2D2B11E7ED0ED002A5357 /* SJStaticTableViewCell+AccessoryDisclosureIndicator.m */; };
+		CBC2D2C81E7ED0ED002A5357 /* SJStaticTableViewCell+AccessoryNone.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC2D2B31E7ED0ED002A5357 /* SJStaticTableViewCell+AccessoryNone.m */; };
+		CBC2D2C91E7ED0ED002A5357 /* SJStaticTableViewCell+AccessorySwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC2D2B51E7ED0ED002A5357 /* SJStaticTableViewCell+AccessorySwitch.m */; };
+		CBC2D2CA1E7ED0ED002A5357 /* SJStaticTableViewCell+Logout.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC2D2B71E7ED0ED002A5357 /* SJStaticTableViewCell+Logout.m */; };
+		CBC2D2CB1E7ED0ED002A5357 /* SJStaticTableViewCell+MeAvatar.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC2D2B91E7ED0ED002A5357 /* SJStaticTableViewCell+MeAvatar.m */; };
+		CBC2D2CC1E7ED0ED002A5357 /* SJStaticTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC2D2BB1E7ED0ED002A5357 /* SJStaticTableViewCell.m */; };
+		CBC2D2CD1E7ED0ED002A5357 /* SJStaticTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC2D2BE1E7ED0ED002A5357 /* SJStaticTableViewController.m */; };
+		CBC2D2CE1E7ED0ED002A5357 /* SJStaticTableviewCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC2D2C11E7ED0ED002A5357 /* SJStaticTableviewCellViewModel.m */; };
+		CBC2D2CF1E7ED0ED002A5357 /* SJStaticTableviewSectionViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC2D2C31E7ED0ED002A5357 /* SJStaticTableviewSectionViewModel.m */; };
+		CBC2D2D51E7ED11B002A5357 /* SJNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC2D2D21E7ED11B002A5357 /* SJNavigationController.m */; };
+		CBC2D2D61E7ED11B002A5357 /* SJTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC2D2D41E7ED11B002A5357 /* SJTabBarController.m */; };
+		CBC2D2DA1E7ED12F002A5357 /* Factory.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC2D2D91E7ED12F002A5357 /* Factory.m */; };
+		CBC2D2DE1E7ED16A002A5357 /* Discover.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBC2D2DB1E7ED16A002A5357 /* Discover.xcassets */; };
+		CBC2D2DF1E7ED16A002A5357 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBC2D2DC1E7ED16A002A5357 /* Images.xcassets */; };
+		CBC2D2E01E7ED16A002A5357 /* Me.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBC2D2DD1E7ED16A002A5357 /* Me.xcassets */; };
+		CBC2D2EE1E7ED17D002A5357 /* SJCustomCellsOneSectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC2D2E31E7ED17D002A5357 /* SJCustomCellsOneSectionViewController.m */; };
+		CBC2D2EF1E7ED17D002A5357 /* SJCustomCellsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC2D2E51E7ED17D002A5357 /* SJCustomCellsViewController.m */; };
+		CBC2D2F01E7ED17D002A5357 /* SJDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC2D2E71E7ED17D002A5357 /* SJDiscoverViewController.m */; };
+		CBC2D2F11E7ED17D002A5357 /* SJInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC2D2E91E7ED17D002A5357 /* SJInfoViewController.m */; };
+		CBC2D2F21E7ED17D002A5357 /* SJMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC2D2EB1E7ED17D002A5357 /* SJMeViewController.m */; };
+		CBC2D2F31E7ED17D002A5357 /* SJSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC2D2ED1E7ED17D002A5357 /* SJSettingViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CBC2D2891E7ED0BD002A5357 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBC2D2671E7ED0BD002A5357 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBC2D26E1E7ED0BD002A5357;
+			remoteInfo = SJStaticTableViewDemo;
+		};
+		CBC2D2941E7ED0BD002A5357 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBC2D2671E7ED0BD002A5357 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBC2D26E1E7ED0BD002A5357;
+			remoteInfo = SJStaticTableViewDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CBC2D26F1E7ED0BD002A5357 /* SJStaticTableViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SJStaticTableViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBC2D2731E7ED0BD002A5357 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CBC2D2751E7ED0BD002A5357 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CBC2D2761E7ED0BD002A5357 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CBC2D2781E7ED0BD002A5357 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CBC2D2791E7ED0BD002A5357 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CBC2D27C1E7ED0BD002A5357 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CBC2D2811E7ED0BD002A5357 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CBC2D2831E7ED0BD002A5357 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBC2D2881E7ED0BD002A5357 /* SJStaticTableViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SJStaticTableViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBC2D28C1E7ED0BD002A5357 /* SJStaticTableViewDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SJStaticTableViewDemoTests.m; sourceTree = "<group>"; };
+		CBC2D28E1E7ED0BD002A5357 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBC2D2931E7ED0BD002A5357 /* SJStaticTableViewDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SJStaticTableViewDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBC2D2971E7ED0BD002A5357 /* SJStaticTableViewDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SJStaticTableViewDemoUITests.m; sourceTree = "<group>"; };
+		CBC2D2991E7ED0BD002A5357 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBC2D2A71E7ED0ED002A5357 /* SJStaticTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJStaticTableViewDataSource.h; sourceTree = "<group>"; };
+		CBC2D2A81E7ED0ED002A5357 /* SJStaticTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJStaticTableViewDataSource.m; sourceTree = "<group>"; };
+		CBC2D2AA1E7ED0ED002A5357 /* arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow@2x.png"; sourceTree = "<group>"; };
+		CBC2D2AB1E7ED0ED002A5357 /* SJConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJConst.h; sourceTree = "<group>"; };
+		CBC2D2AC1E7ED0ED002A5357 /* SJStaticTableViewHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJStaticTableViewHeader.h; sourceTree = "<group>"; };
+		CBC2D2AE1E7ED0ED002A5357 /* SJStaticTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJStaticTableView.h; sourceTree = "<group>"; };
+		CBC2D2AF1E7ED0ED002A5357 /* SJStaticTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJStaticTableView.m; sourceTree = "<group>"; };
+		CBC2D2B01E7ED0ED002A5357 /* SJStaticTableViewCell+AccessoryDisclosureIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SJStaticTableViewCell+AccessoryDisclosureIndicator.h"; sourceTree = "<group>"; };
+		CBC2D2B11E7ED0ED002A5357 /* SJStaticTableViewCell+AccessoryDisclosureIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SJStaticTableViewCell+AccessoryDisclosureIndicator.m"; sourceTree = "<group>"; };
+		CBC2D2B21E7ED0ED002A5357 /* SJStaticTableViewCell+AccessoryNone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SJStaticTableViewCell+AccessoryNone.h"; sourceTree = "<group>"; };
+		CBC2D2B31E7ED0ED002A5357 /* SJStaticTableViewCell+AccessoryNone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SJStaticTableViewCell+AccessoryNone.m"; sourceTree = "<group>"; };
+		CBC2D2B41E7ED0ED002A5357 /* SJStaticTableViewCell+AccessorySwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SJStaticTableViewCell+AccessorySwitch.h"; sourceTree = "<group>"; };
+		CBC2D2B51E7ED0ED002A5357 /* SJStaticTableViewCell+AccessorySwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SJStaticTableViewCell+AccessorySwitch.m"; sourceTree = "<group>"; };
+		CBC2D2B61E7ED0ED002A5357 /* SJStaticTableViewCell+Logout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SJStaticTableViewCell+Logout.h"; sourceTree = "<group>"; };
+		CBC2D2B71E7ED0ED002A5357 /* SJStaticTableViewCell+Logout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SJStaticTableViewCell+Logout.m"; sourceTree = "<group>"; };
+		CBC2D2B81E7ED0ED002A5357 /* SJStaticTableViewCell+MeAvatar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SJStaticTableViewCell+MeAvatar.h"; sourceTree = "<group>"; };
+		CBC2D2B91E7ED0ED002A5357 /* SJStaticTableViewCell+MeAvatar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SJStaticTableViewCell+MeAvatar.m"; sourceTree = "<group>"; };
+		CBC2D2BA1E7ED0ED002A5357 /* SJStaticTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJStaticTableViewCell.h; sourceTree = "<group>"; };
+		CBC2D2BB1E7ED0ED002A5357 /* SJStaticTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJStaticTableViewCell.m; sourceTree = "<group>"; };
+		CBC2D2BD1E7ED0ED002A5357 /* SJStaticTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJStaticTableViewController.h; sourceTree = "<group>"; };
+		CBC2D2BE1E7ED0ED002A5357 /* SJStaticTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJStaticTableViewController.m; sourceTree = "<group>"; };
+		CBC2D2C01E7ED0ED002A5357 /* SJStaticTableviewCellViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJStaticTableviewCellViewModel.h; sourceTree = "<group>"; };
+		CBC2D2C11E7ED0ED002A5357 /* SJStaticTableviewCellViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJStaticTableviewCellViewModel.m; sourceTree = "<group>"; };
+		CBC2D2C21E7ED0ED002A5357 /* SJStaticTableviewSectionViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJStaticTableviewSectionViewModel.h; sourceTree = "<group>"; };
+		CBC2D2C31E7ED0ED002A5357 /* SJStaticTableviewSectionViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJStaticTableviewSectionViewModel.m; sourceTree = "<group>"; };
+		CBC2D2D11E7ED11B002A5357 /* SJNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJNavigationController.h; sourceTree = "<group>"; };
+		CBC2D2D21E7ED11B002A5357 /* SJNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJNavigationController.m; sourceTree = "<group>"; };
+		CBC2D2D31E7ED11B002A5357 /* SJTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJTabBarController.h; sourceTree = "<group>"; };
+		CBC2D2D41E7ED11B002A5357 /* SJTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJTabBarController.m; sourceTree = "<group>"; };
+		CBC2D2D81E7ED12F002A5357 /* Factory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Factory.h; sourceTree = "<group>"; };
+		CBC2D2D91E7ED12F002A5357 /* Factory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Factory.m; sourceTree = "<group>"; };
+		CBC2D2DB1E7ED16A002A5357 /* Discover.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Discover.xcassets; sourceTree = "<group>"; };
+		CBC2D2DC1E7ED16A002A5357 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CBC2D2DD1E7ED16A002A5357 /* Me.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Me.xcassets; sourceTree = "<group>"; };
+		CBC2D2E21E7ED17D002A5357 /* SJCustomCellsOneSectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJCustomCellsOneSectionViewController.h; sourceTree = "<group>"; };
+		CBC2D2E31E7ED17D002A5357 /* SJCustomCellsOneSectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJCustomCellsOneSectionViewController.m; sourceTree = "<group>"; };
+		CBC2D2E41E7ED17D002A5357 /* SJCustomCellsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJCustomCellsViewController.h; sourceTree = "<group>"; };
+		CBC2D2E51E7ED17D002A5357 /* SJCustomCellsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJCustomCellsViewController.m; sourceTree = "<group>"; };
+		CBC2D2E61E7ED17D002A5357 /* SJDiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJDiscoverViewController.h; sourceTree = "<group>"; };
+		CBC2D2E71E7ED17D002A5357 /* SJDiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJDiscoverViewController.m; sourceTree = "<group>"; };
+		CBC2D2E81E7ED17D002A5357 /* SJInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJInfoViewController.h; sourceTree = "<group>"; };
+		CBC2D2E91E7ED17D002A5357 /* SJInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJInfoViewController.m; sourceTree = "<group>"; };
+		CBC2D2EA1E7ED17D002A5357 /* SJMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJMeViewController.h; sourceTree = "<group>"; };
+		CBC2D2EB1E7ED17D002A5357 /* SJMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJMeViewController.m; sourceTree = "<group>"; };
+		CBC2D2EC1E7ED17D002A5357 /* SJSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJSettingViewController.h; sourceTree = "<group>"; };
+		CBC2D2ED1E7ED17D002A5357 /* SJSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJSettingViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CBC2D26C1E7ED0BD002A5357 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBC2D2851E7ED0BD002A5357 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBC2D2901E7ED0BD002A5357 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CBC2D2661E7ED0BD002A5357 = {
+			isa = PBXGroup;
+			children = (
+				CBC2D2711E7ED0BD002A5357 /* SJStaticTableViewDemo */,
+				CBC2D28B1E7ED0BD002A5357 /* SJStaticTableViewDemoTests */,
+				CBC2D2961E7ED0BD002A5357 /* SJStaticTableViewDemoUITests */,
+				CBC2D2701E7ED0BD002A5357 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CBC2D2701E7ED0BD002A5357 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CBC2D26F1E7ED0BD002A5357 /* SJStaticTableViewDemo.app */,
+				CBC2D2881E7ED0BD002A5357 /* SJStaticTableViewDemoTests.xctest */,
+				CBC2D2931E7ED0BD002A5357 /* SJStaticTableViewDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CBC2D2711E7ED0BD002A5357 /* SJStaticTableViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				CBC2D2A51E7ED0ED002A5357 /* SJStaticTableViewComponent */,
+				CBC2D2D01E7ED11B002A5357 /* BaseController */,
+				CBC2D2E11E7ED17D002A5357 /* ViewController */,
+				CBC2D2D71E7ED12F002A5357 /* Model */,
+				CBC2D2721E7ED0BD002A5357 /* Supporting Files */,
+			);
+			path = SJStaticTableViewDemo;
+			sourceTree = "<group>";
+		};
+		CBC2D2721E7ED0BD002A5357 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CBC2D2751E7ED0BD002A5357 /* AppDelegate.h */,
+				CBC2D2761E7ED0BD002A5357 /* AppDelegate.m */,
+				CBC2D2781E7ED0BD002A5357 /* ViewController.h */,
+				CBC2D2791E7ED0BD002A5357 /* ViewController.m */,
+				CBC2D27B1E7ED0BD002A5357 /* Main.storyboard */,
+				CBC2D2DB1E7ED16A002A5357 /* Discover.xcassets */,
+				CBC2D2DC1E7ED16A002A5357 /* Images.xcassets */,
+				CBC2D2DD1E7ED16A002A5357 /* Me.xcassets */,
+				CBC2D2801E7ED0BD002A5357 /* LaunchScreen.storyboard */,
+				CBC2D2831E7ED0BD002A5357 /* Info.plist */,
+				CBC2D2731E7ED0BD002A5357 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CBC2D28B1E7ED0BD002A5357 /* SJStaticTableViewDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				CBC2D28C1E7ED0BD002A5357 /* SJStaticTableViewDemoTests.m */,
+				CBC2D28E1E7ED0BD002A5357 /* Info.plist */,
+			);
+			path = SJStaticTableViewDemoTests;
+			sourceTree = "<group>";
+		};
+		CBC2D2961E7ED0BD002A5357 /* SJStaticTableViewDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CBC2D2971E7ED0BD002A5357 /* SJStaticTableViewDemoUITests.m */,
+				CBC2D2991E7ED0BD002A5357 /* Info.plist */,
+			);
+			path = SJStaticTableViewDemoUITests;
+			sourceTree = "<group>";
+		};
+		CBC2D2A51E7ED0ED002A5357 /* SJStaticTableViewComponent */ = {
+			isa = PBXGroup;
+			children = (
+				CBC2D2AB1E7ED0ED002A5357 /* SJConst.h */,
+				CBC2D2AC1E7ED0ED002A5357 /* SJStaticTableViewHeader.h */,
+				CBC2D2A61E7ED0ED002A5357 /* Model */,
+				CBC2D2A91E7ED0ED002A5357 /* Resource */,
+				CBC2D2AD1E7ED0ED002A5357 /* View */,
+				CBC2D2BC1E7ED0ED002A5357 /* ViewController */,
+				CBC2D2BF1E7ED0ED002A5357 /* ViewModel */,
+			);
+			path = SJStaticTableViewComponent;
+			sourceTree = "<group>";
+		};
+		CBC2D2A61E7ED0ED002A5357 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CBC2D2A71E7ED0ED002A5357 /* SJStaticTableViewDataSource.h */,
+				CBC2D2A81E7ED0ED002A5357 /* SJStaticTableViewDataSource.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CBC2D2A91E7ED0ED002A5357 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				CBC2D2AA1E7ED0ED002A5357 /* arrow@2x.png */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		CBC2D2AD1E7ED0ED002A5357 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CBC2D2AE1E7ED0ED002A5357 /* SJStaticTableView.h */,
+				CBC2D2AF1E7ED0ED002A5357 /* SJStaticTableView.m */,
+				CBC2D2B01E7ED0ED002A5357 /* SJStaticTableViewCell+AccessoryDisclosureIndicator.h */,
+				CBC2D2B11E7ED0ED002A5357 /* SJStaticTableViewCell+AccessoryDisclosureIndicator.m */,
+				CBC2D2B21E7ED0ED002A5357 /* SJStaticTableViewCell+AccessoryNone.h */,
+				CBC2D2B31E7ED0ED002A5357 /* SJStaticTableViewCell+AccessoryNone.m */,
+				CBC2D2B41E7ED0ED002A5357 /* SJStaticTableViewCell+AccessorySwitch.h */,
+				CBC2D2B51E7ED0ED002A5357 /* SJStaticTableViewCell+AccessorySwitch.m */,
+				CBC2D2B61E7ED0ED002A5357 /* SJStaticTableViewCell+Logout.h */,
+				CBC2D2B71E7ED0ED002A5357 /* SJStaticTableViewCell+Logout.m */,
+				CBC2D2B81E7ED0ED002A5357 /* SJStaticTableViewCell+MeAvatar.h */,
+				CBC2D2B91E7ED0ED002A5357 /* SJStaticTableViewCell+MeAvatar.m */,
+				CBC2D2BA1E7ED0ED002A5357 /* SJStaticTableViewCell.h */,
+				CBC2D2BB1E7ED0ED002A5357 /* SJStaticTableViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CBC2D2BC1E7ED0ED002A5357 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CBC2D2BD1E7ED0ED002A5357 /* SJStaticTableViewController.h */,
+				CBC2D2BE1E7ED0ED002A5357 /* SJStaticTableViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CBC2D2BF1E7ED0ED002A5357 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CBC2D2C01E7ED0ED002A5357 /* SJStaticTableviewCellViewModel.h */,
+				CBC2D2C11E7ED0ED002A5357 /* SJStaticTableviewCellViewModel.m */,
+				CBC2D2C21E7ED0ED002A5357 /* SJStaticTableviewSectionViewModel.h */,
+				CBC2D2C31E7ED0ED002A5357 /* SJStaticTableviewSectionViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CBC2D2D01E7ED11B002A5357 /* BaseController */ = {
+			isa = PBXGroup;
+			children = (
+				CBC2D2D11E7ED11B002A5357 /* SJNavigationController.h */,
+				CBC2D2D21E7ED11B002A5357 /* SJNavigationController.m */,
+				CBC2D2D31E7ED11B002A5357 /* SJTabBarController.h */,
+				CBC2D2D41E7ED11B002A5357 /* SJTabBarController.m */,
+			);
+			path = BaseController;
+			sourceTree = "<group>";
+		};
+		CBC2D2D71E7ED12F002A5357 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CBC2D2D81E7ED12F002A5357 /* Factory.h */,
+				CBC2D2D91E7ED12F002A5357 /* Factory.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CBC2D2E11E7ED17D002A5357 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CBC2D2E61E7ED17D002A5357 /* SJDiscoverViewController.h */,
+				CBC2D2E71E7ED17D002A5357 /* SJDiscoverViewController.m */,
+				CBC2D2EA1E7ED17D002A5357 /* SJMeViewController.h */,
+				CBC2D2EB1E7ED17D002A5357 /* SJMeViewController.m */,
+				CBC2D2E81E7ED17D002A5357 /* SJInfoViewController.h */,
+				CBC2D2E91E7ED17D002A5357 /* SJInfoViewController.m */,
+				CBC2D2EC1E7ED17D002A5357 /* SJSettingViewController.h */,
+				CBC2D2ED1E7ED17D002A5357 /* SJSettingViewController.m */,
+				CBC2D2E41E7ED17D002A5357 /* SJCustomCellsViewController.h */,
+				CBC2D2E51E7ED17D002A5357 /* SJCustomCellsViewController.m */,
+				CBC2D2E21E7ED17D002A5357 /* SJCustomCellsOneSectionViewController.h */,
+				CBC2D2E31E7ED17D002A5357 /* SJCustomCellsOneSectionViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CBC2D26E1E7ED0BD002A5357 /* SJStaticTableViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBC2D29C1E7ED0BD002A5357 /* Build configuration list for PBXNativeTarget "SJStaticTableViewDemo" */;
+			buildPhases = (
+				CBC2D26B1E7ED0BD002A5357 /* Sources */,
+				CBC2D26C1E7ED0BD002A5357 /* Frameworks */,
+				CBC2D26D1E7ED0BD002A5357 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SJStaticTableViewDemo;
+			productName = SJStaticTableViewDemo;
+			productReference = CBC2D26F1E7ED0BD002A5357 /* SJStaticTableViewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CBC2D2871E7ED0BD002A5357 /* SJStaticTableViewDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBC2D29F1E7ED0BD002A5357 /* Build configuration list for PBXNativeTarget "SJStaticTableViewDemoTests" */;
+			buildPhases = (
+				CBC2D2841E7ED0BD002A5357 /* Sources */,
+				CBC2D2851E7ED0BD002A5357 /* Frameworks */,
+				CBC2D2861E7ED0BD002A5357 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CBC2D28A1E7ED0BD002A5357 /* PBXTargetDependency */,
+			);
+			name = SJStaticTableViewDemoTests;
+			productName = SJStaticTableViewDemoTests;
+			productReference = CBC2D2881E7ED0BD002A5357 /* SJStaticTableViewDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CBC2D2921E7ED0BD002A5357 /* SJStaticTableViewDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBC2D2A21E7ED0BD002A5357 /* Build configuration list for PBXNativeTarget "SJStaticTableViewDemoUITests" */;
+			buildPhases = (
+				CBC2D28F1E7ED0BD002A5357 /* Sources */,
+				CBC2D2901E7ED0BD002A5357 /* Frameworks */,
+				CBC2D2911E7ED0BD002A5357 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CBC2D2951E7ED0BD002A5357 /* PBXTargetDependency */,
+			);
+			name = SJStaticTableViewDemoUITests;
+			productName = SJStaticTableViewDemoUITests;
+			productReference = CBC2D2931E7ED0BD002A5357 /* SJStaticTableViewDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CBC2D2671E7ED0BD002A5357 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Shijie;
+				TargetAttributes = {
+					CBC2D26E1E7ED0BD002A5357 = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+					};
+					CBC2D2871E7ED0BD002A5357 = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CBC2D26E1E7ED0BD002A5357;
+					};
+					CBC2D2921E7ED0BD002A5357 = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CBC2D26E1E7ED0BD002A5357;
+					};
+				};
+			};
+			buildConfigurationList = CBC2D26A1E7ED0BD002A5357 /* Build configuration list for PBXProject "SJStaticTableViewDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CBC2D2661E7ED0BD002A5357;
+			productRefGroup = CBC2D2701E7ED0BD002A5357 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CBC2D26E1E7ED0BD002A5357 /* SJStaticTableViewDemo */,
+				CBC2D2871E7ED0BD002A5357 /* SJStaticTableViewDemoTests */,
+				CBC2D2921E7ED0BD002A5357 /* SJStaticTableViewDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CBC2D26D1E7ED0BD002A5357 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBC2D2C51E7ED0ED002A5357 /* arrow@2x.png in Resources */,
+				CBC2D2DE1E7ED16A002A5357 /* Discover.xcassets in Resources */,
+				CBC2D2821E7ED0BD002A5357 /* LaunchScreen.storyboard in Resources */,
+				CBC2D2E01E7ED16A002A5357 /* Me.xcassets in Resources */,
+				CBC2D2DF1E7ED16A002A5357 /* Images.xcassets in Resources */,
+				CBC2D27D1E7ED0BD002A5357 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBC2D2861E7ED0BD002A5357 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBC2D2911E7ED0BD002A5357 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CBC2D26B1E7ED0BD002A5357 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBC2D2DA1E7ED12F002A5357 /* Factory.m in Sources */,
+				CBC2D2C71E7ED0ED002A5357 /* SJStaticTableViewCell+AccessoryDisclosureIndicator.m in Sources */,
+				CBC2D2CF1E7ED0ED002A5357 /* SJStaticTableviewSectionViewModel.m in Sources */,
+				CBC2D27A1E7ED0BD002A5357 /* ViewController.m in Sources */,
+				CBC2D2D51E7ED11B002A5357 /* SJNavigationController.m in Sources */,
+				CBC2D2F11E7ED17D002A5357 /* SJInfoViewController.m in Sources */,
+				CBC2D2771E7ED0BD002A5357 /* AppDelegate.m in Sources */,
+				CBC2D2C91E7ED0ED002A5357 /* SJStaticTableViewCell+AccessorySwitch.m in Sources */,
+				CBC2D2CD1E7ED0ED002A5357 /* SJStaticTableViewController.m in Sources */,
+				CBC2D2F01E7ED17D002A5357 /* SJDiscoverViewController.m in Sources */,
+				CBC2D2CE1E7ED0ED002A5357 /* SJStaticTableviewCellViewModel.m in Sources */,
+				CBC2D2F21E7ED17D002A5357 /* SJMeViewController.m in Sources */,
+				CBC2D2CA1E7ED0ED002A5357 /* SJStaticTableViewCell+Logout.m in Sources */,
+				CBC2D2F31E7ED17D002A5357 /* SJSettingViewController.m in Sources */,
+				CBC2D2CC1E7ED0ED002A5357 /* SJStaticTableViewCell.m in Sources */,
+				CBC2D2C81E7ED0ED002A5357 /* SJStaticTableViewCell+AccessoryNone.m in Sources */,
+				CBC2D2741E7ED0BD002A5357 /* main.m in Sources */,
+				CBC2D2EE1E7ED17D002A5357 /* SJCustomCellsOneSectionViewController.m in Sources */,
+				CBC2D2EF1E7ED17D002A5357 /* SJCustomCellsViewController.m in Sources */,
+				CBC2D2D61E7ED11B002A5357 /* SJTabBarController.m in Sources */,
+				CBC2D2C41E7ED0ED002A5357 /* SJStaticTableViewDataSource.m in Sources */,
+				CBC2D2CB1E7ED0ED002A5357 /* SJStaticTableViewCell+MeAvatar.m in Sources */,
+				CBC2D2C61E7ED0ED002A5357 /* SJStaticTableView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBC2D2841E7ED0BD002A5357 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBC2D28D1E7ED0BD002A5357 /* SJStaticTableViewDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBC2D28F1E7ED0BD002A5357 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBC2D2981E7ED0BD002A5357 /* SJStaticTableViewDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CBC2D28A1E7ED0BD002A5357 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CBC2D26E1E7ED0BD002A5357 /* SJStaticTableViewDemo */;
+			targetProxy = CBC2D2891E7ED0BD002A5357 /* PBXContainerItemProxy */;
+		};
+		CBC2D2951E7ED0BD002A5357 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CBC2D26E1E7ED0BD002A5357 /* SJStaticTableViewDemo */;
+			targetProxy = CBC2D2941E7ED0BD002A5357 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CBC2D27B1E7ED0BD002A5357 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBC2D27C1E7ED0BD002A5357 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CBC2D2801E7ED0BD002A5357 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBC2D2811E7ED0BD002A5357 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CBC2D29A1E7ED0BD002A5357 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CBC2D29B1E7ED0BD002A5357 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CBC2D29D1E7ED0BD002A5357 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SJStaticTableViewDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shijie.SJStaticTableViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CBC2D29E1E7ED0BD002A5357 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SJStaticTableViewDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shijie.SJStaticTableViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CBC2D2A01E7ED0BD002A5357 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SJStaticTableViewDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shijie.SJStaticTableViewDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SJStaticTableViewDemo.app/SJStaticTableViewDemo";
+			};
+			name = Debug;
+		};
+		CBC2D2A11E7ED0BD002A5357 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SJStaticTableViewDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shijie.SJStaticTableViewDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SJStaticTableViewDemo.app/SJStaticTableViewDemo";
+			};
+			name = Release;
+		};
+		CBC2D2A31E7ED0BD002A5357 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SJStaticTableViewDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shijie.SJStaticTableViewDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SJStaticTableViewDemo;
+			};
+			name = Debug;
+		};
+		CBC2D2A41E7ED0BD002A5357 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SJStaticTableViewDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shijie.SJStaticTableViewDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SJStaticTableViewDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CBC2D26A1E7ED0BD002A5357 /* Build configuration list for PBXProject "SJStaticTableViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBC2D29A1E7ED0BD002A5357 /* Debug */,
+				CBC2D29B1E7ED0BD002A5357 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBC2D29C1E7ED0BD002A5357 /* Build configuration list for PBXNativeTarget "SJStaticTableViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBC2D29D1E7ED0BD002A5357 /* Debug */,
+				CBC2D29E1E7ED0BD002A5357 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CBC2D29F1E7ED0BD002A5357 /* Build configuration list for PBXNativeTarget "SJStaticTableViewDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBC2D2A01E7ED0BD002A5357 /* Debug */,
+				CBC2D2A11E7ED0BD002A5357 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CBC2D2A21E7ED0BD002A5357 /* Build configuration list for PBXNativeTarget "SJStaticTableViewDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBC2D2A31E7ED0BD002A5357 /* Debug */,
+				CBC2D2A41E7ED0BD002A5357 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CBC2D2671E7ED0BD002A5357 /* Project object */;
+}
