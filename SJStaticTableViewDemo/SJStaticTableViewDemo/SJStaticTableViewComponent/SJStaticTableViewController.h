@@ -8,6 +8,7 @@
 
 
 #import "SJStaticTableViewHeader.h"
+#import "Factory.h"//假数据
 
 @protocol SJStaticTableViewControllerDelegate <NSObject>
 

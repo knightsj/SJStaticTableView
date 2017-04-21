@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CB4A14ED1EA9D517001CF2A3 /* Factory.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4A14D21EA9D517001CF2A3 /* Factory.m */; };
-		CB4A14EE1EA9D517001CF2A3 /* arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CB4A14D41EA9D517001CF2A3 /* arrow@2x.png */; };
-		CB4A14EF1EA9D517001CF2A3 /* SJStaticTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4A14D71EA9D517001CF2A3 /* SJStaticTableView.m */; };
-		CB4A14F01EA9D517001CF2A3 /* SJStaticTableViewCell+AccessoryDisclosureIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4A14D91EA9D517001CF2A3 /* SJStaticTableViewCell+AccessoryDisclosureIndicator.m */; };
-		CB4A14F11EA9D517001CF2A3 /* SJStaticTableViewCell+AccessoryNone.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4A14DB1EA9D517001CF2A3 /* SJStaticTableViewCell+AccessoryNone.m */; };
-		CB4A14F21EA9D517001CF2A3 /* SJStaticTableViewCell+AccessorySwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4A14DD1EA9D517001CF2A3 /* SJStaticTableViewCell+AccessorySwitch.m */; };
-		CB4A14F31EA9D517001CF2A3 /* SJStaticTableViewCell+Logout.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4A14DF1EA9D517001CF2A3 /* SJStaticTableViewCell+Logout.m */; };
-		CB4A14F41EA9D517001CF2A3 /* SJStaticTableViewCell+MeAvatar.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4A14E11EA9D517001CF2A3 /* SJStaticTableViewCell+MeAvatar.m */; };
-		CB4A14F51EA9D517001CF2A3 /* SJStaticTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4A14E31EA9D517001CF2A3 /* SJStaticTableViewCell.m */; };
-		CB4A14F61EA9D517001CF2A3 /* SJStaticTableviewCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4A14E51EA9D517001CF2A3 /* SJStaticTableviewCellViewModel.m */; };
-		CB4A14F71EA9D517001CF2A3 /* SJStaticTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4A14E71EA9D517001CF2A3 /* SJStaticTableViewController.m */; };
-		CB4A14F81EA9D517001CF2A3 /* SJStaticTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4A14E91EA9D517001CF2A3 /* SJStaticTableViewDataSource.m */; };
-		CB4A14F91EA9D517001CF2A3 /* SJStaticTableviewSectionViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4A14EC1EA9D517001CF2A3 /* SJStaticTableviewSectionViewModel.m */; };
+		CB67C3D01EA9DF4D00B6125B /* Factory.m in Sources */ = {isa = PBXBuildFile; fileRef = CB67C3B51EA9DF4D00B6125B /* Factory.m */; };
+		CB67C3D11EA9DF4D00B6125B /* arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CB67C3B71EA9DF4D00B6125B /* arrow@2x.png */; };
+		CB67C3D21EA9DF4D00B6125B /* SJStaticTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = CB67C3BA1EA9DF4D00B6125B /* SJStaticTableView.m */; };
+		CB67C3D31EA9DF4D00B6125B /* SJStaticTableViewCell+AccessoryDisclosureIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = CB67C3BC1EA9DF4D00B6125B /* SJStaticTableViewCell+AccessoryDisclosureIndicator.m */; };
+		CB67C3D41EA9DF4D00B6125B /* SJStaticTableViewCell+AccessoryNone.m in Sources */ = {isa = PBXBuildFile; fileRef = CB67C3BE1EA9DF4D00B6125B /* SJStaticTableViewCell+AccessoryNone.m */; };
+		CB67C3D51EA9DF4D00B6125B /* SJStaticTableViewCell+AccessorySwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = CB67C3C01EA9DF4D00B6125B /* SJStaticTableViewCell+AccessorySwitch.m */; };
+		CB67C3D61EA9DF4D00B6125B /* SJStaticTableViewCell+Logout.m in Sources */ = {isa = PBXBuildFile; fileRef = CB67C3C21EA9DF4D00B6125B /* SJStaticTableViewCell+Logout.m */; };
+		CB67C3D71EA9DF4D00B6125B /* SJStaticTableViewCell+MeAvatar.m in Sources */ = {isa = PBXBuildFile; fileRef = CB67C3C41EA9DF4D00B6125B /* SJStaticTableViewCell+MeAvatar.m */; };
+		CB67C3D81EA9DF4D00B6125B /* SJStaticTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB67C3C61EA9DF4D00B6125B /* SJStaticTableViewCell.m */; };
+		CB67C3D91EA9DF4D00B6125B /* SJStaticTableviewCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CB67C3C81EA9DF4D00B6125B /* SJStaticTableviewCellViewModel.m */; };
+		CB67C3DA1EA9DF4D00B6125B /* SJStaticTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB67C3CA1EA9DF4D00B6125B /* SJStaticTableViewController.m */; };
+		CB67C3DB1EA9DF4D00B6125B /* SJStaticTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = CB67C3CC1EA9DF4D00B6125B /* SJStaticTableViewDataSource.m */; };
+		CB67C3DC1EA9DF4D00B6125B /* SJStaticTableviewSectionViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CB67C3CF1EA9DF4D00B6125B /* SJStaticTableviewSectionViewModel.m */; };
 		CBC2D2741E7ED0BD002A5357 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC2D2731E7ED0BD002A5357 /* main.m */; };
 		CBC2D2771E7ED0BD002A5357 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC2D2761E7ED0BD002A5357 /* AppDelegate.m */; };
 		CBC2D27A1E7ED0BD002A5357 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC2D2791E7ED0BD002A5357 /* ViewController.m */; };
@@ -58,33 +58,33 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CB4A14D11EA9D517001CF2A3 /* Factory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Factory.h; sourceTree = "<group>"; };
-		CB4A14D21EA9D517001CF2A3 /* Factory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Factory.m; sourceTree = "<group>"; };
-		CB4A14D41EA9D517001CF2A3 /* arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow@2x.png"; sourceTree = "<group>"; };
-		CB4A14D51EA9D517001CF2A3 /* SJConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJConst.h; sourceTree = "<group>"; };
-		CB4A14D61EA9D517001CF2A3 /* SJStaticTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJStaticTableView.h; sourceTree = "<group>"; };
-		CB4A14D71EA9D517001CF2A3 /* SJStaticTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJStaticTableView.m; sourceTree = "<group>"; };
-		CB4A14D81EA9D517001CF2A3 /* SJStaticTableViewCell+AccessoryDisclosureIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SJStaticTableViewCell+AccessoryDisclosureIndicator.h"; sourceTree = "<group>"; };
-		CB4A14D91EA9D517001CF2A3 /* SJStaticTableViewCell+AccessoryDisclosureIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SJStaticTableViewCell+AccessoryDisclosureIndicator.m"; sourceTree = "<group>"; };
-		CB4A14DA1EA9D517001CF2A3 /* SJStaticTableViewCell+AccessoryNone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SJStaticTableViewCell+AccessoryNone.h"; sourceTree = "<group>"; };
-		CB4A14DB1EA9D517001CF2A3 /* SJStaticTableViewCell+AccessoryNone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SJStaticTableViewCell+AccessoryNone.m"; sourceTree = "<group>"; };
-		CB4A14DC1EA9D517001CF2A3 /* SJStaticTableViewCell+AccessorySwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SJStaticTableViewCell+AccessorySwitch.h"; sourceTree = "<group>"; };
-		CB4A14DD1EA9D517001CF2A3 /* SJStaticTableViewCell+AccessorySwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SJStaticTableViewCell+AccessorySwitch.m"; sourceTree = "<group>"; };
-		CB4A14DE1EA9D517001CF2A3 /* SJStaticTableViewCell+Logout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SJStaticTableViewCell+Logout.h"; sourceTree = "<group>"; };
-		CB4A14DF1EA9D517001CF2A3 /* SJStaticTableViewCell+Logout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SJStaticTableViewCell+Logout.m"; sourceTree = "<group>"; };
-		CB4A14E01EA9D517001CF2A3 /* SJStaticTableViewCell+MeAvatar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SJStaticTableViewCell+MeAvatar.h"; sourceTree = "<group>"; };
-		CB4A14E11EA9D517001CF2A3 /* SJStaticTableViewCell+MeAvatar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SJStaticTableViewCell+MeAvatar.m"; sourceTree = "<group>"; };
-		CB4A14E21EA9D517001CF2A3 /* SJStaticTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJStaticTableViewCell.h; sourceTree = "<group>"; };
-		CB4A14E31EA9D517001CF2A3 /* SJStaticTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJStaticTableViewCell.m; sourceTree = "<group>"; };
-		CB4A14E41EA9D517001CF2A3 /* SJStaticTableviewCellViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJStaticTableviewCellViewModel.h; sourceTree = "<group>"; };
-		CB4A14E51EA9D517001CF2A3 /* SJStaticTableviewCellViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJStaticTableviewCellViewModel.m; sourceTree = "<group>"; };
-		CB4A14E61EA9D517001CF2A3 /* SJStaticTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJStaticTableViewController.h; sourceTree = "<group>"; };
-		CB4A14E71EA9D517001CF2A3 /* SJStaticTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJStaticTableViewController.m; sourceTree = "<group>"; };
-		CB4A14E81EA9D517001CF2A3 /* SJStaticTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJStaticTableViewDataSource.h; sourceTree = "<group>"; };
-		CB4A14E91EA9D517001CF2A3 /* SJStaticTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJStaticTableViewDataSource.m; sourceTree = "<group>"; };
-		CB4A14EA1EA9D517001CF2A3 /* SJStaticTableViewHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJStaticTableViewHeader.h; sourceTree = "<group>"; };
-		CB4A14EB1EA9D517001CF2A3 /* SJStaticTableviewSectionViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJStaticTableviewSectionViewModel.h; sourceTree = "<group>"; };
-		CB4A14EC1EA9D517001CF2A3 /* SJStaticTableviewSectionViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJStaticTableviewSectionViewModel.m; sourceTree = "<group>"; };
+		CB67C3B41EA9DF4D00B6125B /* Factory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Factory.h; sourceTree = "<group>"; };
+		CB67C3B51EA9DF4D00B6125B /* Factory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Factory.m; sourceTree = "<group>"; };
+		CB67C3B71EA9DF4D00B6125B /* arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow@2x.png"; sourceTree = "<group>"; };
+		CB67C3B81EA9DF4D00B6125B /* SJConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJConst.h; sourceTree = "<group>"; };
+		CB67C3B91EA9DF4D00B6125B /* SJStaticTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJStaticTableView.h; sourceTree = "<group>"; };
+		CB67C3BA1EA9DF4D00B6125B /* SJStaticTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJStaticTableView.m; sourceTree = "<group>"; };
+		CB67C3BB1EA9DF4D00B6125B /* SJStaticTableViewCell+AccessoryDisclosureIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SJStaticTableViewCell+AccessoryDisclosureIndicator.h"; sourceTree = "<group>"; };
+		CB67C3BC1EA9DF4D00B6125B /* SJStaticTableViewCell+AccessoryDisclosureIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SJStaticTableViewCell+AccessoryDisclosureIndicator.m"; sourceTree = "<group>"; };
+		CB67C3BD1EA9DF4D00B6125B /* SJStaticTableViewCell+AccessoryNone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SJStaticTableViewCell+AccessoryNone.h"; sourceTree = "<group>"; };
+		CB67C3BE1EA9DF4D00B6125B /* SJStaticTableViewCell+AccessoryNone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SJStaticTableViewCell+AccessoryNone.m"; sourceTree = "<group>"; };
+		CB67C3BF1EA9DF4D00B6125B /* SJStaticTableViewCell+AccessorySwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SJStaticTableViewCell+AccessorySwitch.h"; sourceTree = "<group>"; };
+		CB67C3C01EA9DF4D00B6125B /* SJStaticTableViewCell+AccessorySwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SJStaticTableViewCell+AccessorySwitch.m"; sourceTree = "<group>"; };
+		CB67C3C11EA9DF4D00B6125B /* SJStaticTableViewCell+Logout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SJStaticTableViewCell+Logout.h"; sourceTree = "<group>"; };
+		CB67C3C21EA9DF4D00B6125B /* SJStaticTableViewCell+Logout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SJStaticTableViewCell+Logout.m"; sourceTree = "<group>"; };
+		CB67C3C31EA9DF4D00B6125B /* SJStaticTableViewCell+MeAvatar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SJStaticTableViewCell+MeAvatar.h"; sourceTree = "<group>"; };
+		CB67C3C41EA9DF4D00B6125B /* SJStaticTableViewCell+MeAvatar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SJStaticTableViewCell+MeAvatar.m"; sourceTree = "<group>"; };
+		CB67C3C51EA9DF4D00B6125B /* SJStaticTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJStaticTableViewCell.h; sourceTree = "<group>"; };
+		CB67C3C61EA9DF4D00B6125B /* SJStaticTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJStaticTableViewCell.m; sourceTree = "<group>"; };
+		CB67C3C71EA9DF4D00B6125B /* SJStaticTableviewCellViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJStaticTableviewCellViewModel.h; sourceTree = "<group>"; };
+		CB67C3C81EA9DF4D00B6125B /* SJStaticTableviewCellViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJStaticTableviewCellViewModel.m; sourceTree = "<group>"; };
+		CB67C3C91EA9DF4D00B6125B /* SJStaticTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJStaticTableViewController.h; sourceTree = "<group>"; };
+		CB67C3CA1EA9DF4D00B6125B /* SJStaticTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJStaticTableViewController.m; sourceTree = "<group>"; };
+		CB67C3CB1EA9DF4D00B6125B /* SJStaticTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJStaticTableViewDataSource.h; sourceTree = "<group>"; };
+		CB67C3CC1EA9DF4D00B6125B /* SJStaticTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJStaticTableViewDataSource.m; sourceTree = "<group>"; };
+		CB67C3CD1EA9DF4D00B6125B /* SJStaticTableViewHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJStaticTableViewHeader.h; sourceTree = "<group>"; };
+		CB67C3CE1EA9DF4D00B6125B /* SJStaticTableviewSectionViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJStaticTableviewSectionViewModel.h; sourceTree = "<group>"; };
+		CB67C3CF1EA9DF4D00B6125B /* SJStaticTableviewSectionViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJStaticTableviewSectionViewModel.m; sourceTree = "<group>"; };
 		CBC2D26F1E7ED0BD002A5357 /* SJStaticTableViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SJStaticTableViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBC2D2731E7ED0BD002A5357 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CBC2D2751E7ED0BD002A5357 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -146,44 +146,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CB4A14D01EA9D517001CF2A3 /* SJStaticTableViewComponent */ = {
+		CB67C3B31EA9DF4D00B6125B /* SJStaticTableViewComponent */ = {
 			isa = PBXGroup;
 			children = (
-				CB4A14D11EA9D517001CF2A3 /* Factory.h */,
-				CB4A14D21EA9D517001CF2A3 /* Factory.m */,
-				CB4A14D31EA9D517001CF2A3 /* Resources */,
-				CB4A14D51EA9D517001CF2A3 /* SJConst.h */,
-				CB4A14D61EA9D517001CF2A3 /* SJStaticTableView.h */,
-				CB4A14D71EA9D517001CF2A3 /* SJStaticTableView.m */,
-				CB4A14D81EA9D517001CF2A3 /* SJStaticTableViewCell+AccessoryDisclosureIndicator.h */,
-				CB4A14D91EA9D517001CF2A3 /* SJStaticTableViewCell+AccessoryDisclosureIndicator.m */,
-				CB4A14DA1EA9D517001CF2A3 /* SJStaticTableViewCell+AccessoryNone.h */,
-				CB4A14DB1EA9D517001CF2A3 /* SJStaticTableViewCell+AccessoryNone.m */,
-				CB4A14DC1EA9D517001CF2A3 /* SJStaticTableViewCell+AccessorySwitch.h */,
-				CB4A14DD1EA9D517001CF2A3 /* SJStaticTableViewCell+AccessorySwitch.m */,
-				CB4A14DE1EA9D517001CF2A3 /* SJStaticTableViewCell+Logout.h */,
-				CB4A14DF1EA9D517001CF2A3 /* SJStaticTableViewCell+Logout.m */,
-				CB4A14E01EA9D517001CF2A3 /* SJStaticTableViewCell+MeAvatar.h */,
-				CB4A14E11EA9D517001CF2A3 /* SJStaticTableViewCell+MeAvatar.m */,
-				CB4A14E21EA9D517001CF2A3 /* SJStaticTableViewCell.h */,
-				CB4A14E31EA9D517001CF2A3 /* SJStaticTableViewCell.m */,
-				CB4A14E41EA9D517001CF2A3 /* SJStaticTableviewCellViewModel.h */,
-				CB4A14E51EA9D517001CF2A3 /* SJStaticTableviewCellViewModel.m */,
-				CB4A14E61EA9D517001CF2A3 /* SJStaticTableViewController.h */,
-				CB4A14E71EA9D517001CF2A3 /* SJStaticTableViewController.m */,
-				CB4A14E81EA9D517001CF2A3 /* SJStaticTableViewDataSource.h */,
-				CB4A14E91EA9D517001CF2A3 /* SJStaticTableViewDataSource.m */,
-				CB4A14EA1EA9D517001CF2A3 /* SJStaticTableViewHeader.h */,
-				CB4A14EB1EA9D517001CF2A3 /* SJStaticTableviewSectionViewModel.h */,
-				CB4A14EC1EA9D517001CF2A3 /* SJStaticTableviewSectionViewModel.m */,
+				CB67C3B41EA9DF4D00B6125B /* Factory.h */,
+				CB67C3B51EA9DF4D00B6125B /* Factory.m */,
+				CB67C3B61EA9DF4D00B6125B /* Resources */,
+				CB67C3B81EA9DF4D00B6125B /* SJConst.h */,
+				CB67C3B91EA9DF4D00B6125B /* SJStaticTableView.h */,
+				CB67C3BA1EA9DF4D00B6125B /* SJStaticTableView.m */,
+				CB67C3BB1EA9DF4D00B6125B /* SJStaticTableViewCell+AccessoryDisclosureIndicator.h */,
+				CB67C3BC1EA9DF4D00B6125B /* SJStaticTableViewCell+AccessoryDisclosureIndicator.m */,
+				CB67C3BD1EA9DF4D00B6125B /* SJStaticTableViewCell+AccessoryNone.h */,
+				CB67C3BE1EA9DF4D00B6125B /* SJStaticTableViewCell+AccessoryNone.m */,
+				CB67C3BF1EA9DF4D00B6125B /* SJStaticTableViewCell+AccessorySwitch.h */,
+				CB67C3C01EA9DF4D00B6125B /* SJStaticTableViewCell+AccessorySwitch.m */,
+				CB67C3C11EA9DF4D00B6125B /* SJStaticTableViewCell+Logout.h */,
+				CB67C3C21EA9DF4D00B6125B /* SJStaticTableViewCell+Logout.m */,
+				CB67C3C31EA9DF4D00B6125B /* SJStaticTableViewCell+MeAvatar.h */,
+				CB67C3C41EA9DF4D00B6125B /* SJStaticTableViewCell+MeAvatar.m */,
+				CB67C3C51EA9DF4D00B6125B /* SJStaticTableViewCell.h */,
+				CB67C3C61EA9DF4D00B6125B /* SJStaticTableViewCell.m */,
+				CB67C3C71EA9DF4D00B6125B /* SJStaticTableviewCellViewModel.h */,
+				CB67C3C81EA9DF4D00B6125B /* SJStaticTableviewCellViewModel.m */,
+				CB67C3C91EA9DF4D00B6125B /* SJStaticTableViewController.h */,
+				CB67C3CA1EA9DF4D00B6125B /* SJStaticTableViewController.m */,
+				CB67C3CB1EA9DF4D00B6125B /* SJStaticTableViewDataSource.h */,
+				CB67C3CC1EA9DF4D00B6125B /* SJStaticTableViewDataSource.m */,
+				CB67C3CD1EA9DF4D00B6125B /* SJStaticTableViewHeader.h */,
+				CB67C3CE1EA9DF4D00B6125B /* SJStaticTableviewSectionViewModel.h */,
+				CB67C3CF1EA9DF4D00B6125B /* SJStaticTableviewSectionViewModel.m */,
 			);
 			path = SJStaticTableViewComponent;
 			sourceTree = "<group>";
 		};
-		CB4A14D31EA9D517001CF2A3 /* Resources */ = {
+		CB67C3B61EA9DF4D00B6125B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				CB4A14D41EA9D517001CF2A3 /* arrow@2x.png */,
+				CB67C3B71EA9DF4D00B6125B /* arrow@2x.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -211,7 +211,7 @@
 		CBC2D2711E7ED0BD002A5357 /* SJStaticTableViewDemo */ = {
 			isa = PBXGroup;
 			children = (
-				CB4A14D01EA9D517001CF2A3 /* SJStaticTableViewComponent */,
+				CB67C3B31EA9DF4D00B6125B /* SJStaticTableViewComponent */,
 				CBC2D2D01E7ED11B002A5357 /* BaseController */,
 				CBC2D2E11E7ED17D002A5357 /* ViewController */,
 				CBC2D2721E7ED0BD002A5357 /* Supporting Files */,
@@ -393,7 +393,7 @@
 			files = (
 				CBC2D2DE1E7ED16A002A5357 /* Discover.xcassets in Resources */,
 				CBC2D2821E7ED0BD002A5357 /* LaunchScreen.storyboard in Resources */,
-				CB4A14EE1EA9D517001CF2A3 /* arrow@2x.png in Resources */,
+				CB67C3D11EA9DF4D00B6125B /* arrow@2x.png in Resources */,
 				CBC2D2E01E7ED16A002A5357 /* Me.xcassets in Resources */,
 				CBC2D2DF1E7ED16A002A5357 /* Images.xcassets in Resources */,
 				CBC2D27D1E7ED0BD002A5357 /* Main.storyboard in Resources */,
@@ -422,27 +422,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBC2D27A1E7ED0BD002A5357 /* ViewController.m in Sources */,
-				CB4A14F31EA9D517001CF2A3 /* SJStaticTableViewCell+Logout.m in Sources */,
+				CB67C3D61EA9DF4D00B6125B /* SJStaticTableViewCell+Logout.m in Sources */,
 				CBC2D2D51E7ED11B002A5357 /* SJNavigationController.m in Sources */,
 				CBC2D2F11E7ED17D002A5357 /* SJInfoViewController.m in Sources */,
-				CB4A14F21EA9D517001CF2A3 /* SJStaticTableViewCell+AccessorySwitch.m in Sources */,
+				CB67C3D51EA9DF4D00B6125B /* SJStaticTableViewCell+AccessorySwitch.m in Sources */,
 				CBC2D2771E7ED0BD002A5357 /* AppDelegate.m in Sources */,
-				CB4A14F51EA9D517001CF2A3 /* SJStaticTableViewCell.m in Sources */,
-				CB4A14ED1EA9D517001CF2A3 /* Factory.m in Sources */,
-				CB4A14EF1EA9D517001CF2A3 /* SJStaticTableView.m in Sources */,
-				CB4A14F11EA9D517001CF2A3 /* SJStaticTableViewCell+AccessoryNone.m in Sources */,
+				CB67C3D81EA9DF4D00B6125B /* SJStaticTableViewCell.m in Sources */,
+				CB67C3D01EA9DF4D00B6125B /* Factory.m in Sources */,
+				CB67C3D21EA9DF4D00B6125B /* SJStaticTableView.m in Sources */,
+				CB67C3D41EA9DF4D00B6125B /* SJStaticTableViewCell+AccessoryNone.m in Sources */,
 				CBC2D2F01E7ED17D002A5357 /* SJDiscoverViewController.m in Sources */,
 				CBC2D2F21E7ED17D002A5357 /* SJMeViewController.m in Sources */,
 				CBC2D2F31E7ED17D002A5357 /* SJSettingViewController.m in Sources */,
-				CB4A14F71EA9D517001CF2A3 /* SJStaticTableViewController.m in Sources */,
-				CB4A14F41EA9D517001CF2A3 /* SJStaticTableViewCell+MeAvatar.m in Sources */,
+				CB67C3DA1EA9DF4D00B6125B /* SJStaticTableViewController.m in Sources */,
+				CB67C3D71EA9DF4D00B6125B /* SJStaticTableViewCell+MeAvatar.m in Sources */,
 				CBC2D2741E7ED0BD002A5357 /* main.m in Sources */,
-				CB4A14F01EA9D517001CF2A3 /* SJStaticTableViewCell+AccessoryDisclosureIndicator.m in Sources */,
+				CB67C3D31EA9DF4D00B6125B /* SJStaticTableViewCell+AccessoryDisclosureIndicator.m in Sources */,
 				CBC2D2EE1E7ED17D002A5357 /* SJCustomCellsOneSectionViewController.m in Sources */,
 				CBC2D2EF1E7ED17D002A5357 /* SJCustomCellsViewController.m in Sources */,
-				CB4A14F81EA9D517001CF2A3 /* SJStaticTableViewDataSource.m in Sources */,
-				CB4A14F91EA9D517001CF2A3 /* SJStaticTableviewSectionViewModel.m in Sources */,
-				CB4A14F61EA9D517001CF2A3 /* SJStaticTableviewCellViewModel.m in Sources */,
+				CB67C3DB1EA9DF4D00B6125B /* SJStaticTableViewDataSource.m in Sources */,
+				CB67C3DC1EA9DF4D00B6125B /* SJStaticTableviewSectionViewModel.m in Sources */,
+				CB67C3D91EA9DF4D00B6125B /* SJStaticTableviewCellViewModel.m in Sources */,
 				CBC2D2D61E7ED11B002A5357 /* SJTabBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
