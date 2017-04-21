@@ -23,6 +23,10 @@ typedef NS_ENUM(NSInteger, SSJStaticCellType) {
 
 ![支持cell类型](http://oih3a9o4n.bkt.clouddn.com/sjstatictableview_6.png)
 
+## 集成方法：
+1. 静态：手动将SJStaticTableViewComponent文件夹拖入到工程中。
+2. 动态：CocoaPods：``pod 'SJStaticTableView', '~> 1.0.3'``。
+
 ## 1. Demo效果图：
 ![发现页 | 个人页 | 个人信息页 | 设置页](http://oih3a9o4n.bkt.clouddn.com/sjstatictableview_1.png)
 
