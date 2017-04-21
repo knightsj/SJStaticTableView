@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "SJStaticTableView"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "SJStaticTableView can be used to establish ViewControllers which contain static tableview such as setting page and userinfo page."
 
   # This description is used to generate tags and improve search results.
