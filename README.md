@@ -457,7 +457,7 @@ typedef NS_ENUM(NSInteger, SSJStaticCellType) {
 
 ## 4. 刷新数据源
 ----
-支持更新数据源后，刷新数据源。试着在发现页模拟网络请求，在请求结束后更新某个cell的viewmodel。举个例子：刷新一下发现页里最后一行的cell：
+支持更新数据源后，刷新数据源。比如在发现页模拟网络请求，在请求结束后更新某个cell的viewmodel：
 
 ```objc
 //模拟网络请求

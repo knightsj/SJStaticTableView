@@ -22,7 +22,4 @@
 @property (nonatomic, strong) SJStaticTableView *tableView;
 @property (nonatomic, strong) SJStaticTableViewDataSource *dataSource;
 
-
-- (SJStaticTableviewCellViewModel *)retrieveCellViewModelAtIndexPath:(NSIndexPath *)indexPath;
-
 @end
