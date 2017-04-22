@@ -455,7 +455,45 @@ typedef NS_ENUM(NSInteger, SSJStaticCellType) {
 >为了方便比较，同组页面的定制和分组是一致的。我们可以看到，定制代码都作用于cell的viewModel上了。
 
 
+## 4. 刷新数据源
 ----
+支持更新数据源后，刷新数据源。试着在发现页模拟网络请求，在请求结束后更新某个cell的viewmodel。举个例子：刷新一下发现页里最后一行的cell：
 
-非常感谢你的阅读，觉得不好请多批评
+```objc
+//模拟网络请求
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        
+        //请求成功x
+        NSDictionary *responseDict = @{@"title_info":@"新游戏上架啦",
+                                       @"title_icon":@"game_1",
+                                       @"game_info":@"一起来玩斗地主呀！",
+                                       @"game_icon":@"doudizhu"
+                                       };
+        //将要刷新cell的indexPath
+        NSIndexPath *indexPath = [NSIndexPath indexPathForRow:1 inSection:3];
+        
+        //获取cell对应的viewModel
+        SJStaticTableviewCellViewModel *viewModel = [self.dataSource tableView:self.tableView cellViewModelAtIndexPath:indexPath];
+        
+        if (viewModel) {
+            //更新viewModel
+            viewModel.leftTitle = responseDict[@"title_info"];
+            viewModel.leftImage = [UIImage imageNamed:responseDict[@"title_icon"]];
+            viewModel.indicatorLeftImage = [UIImage imageNamed:responseDict[@"game_icon"]];
+            viewModel.indicatorLeftTitle = responseDict[@"game_info"];
+            
+            //刷新tableview
+            [self.tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        }
+    });
+```
+
+效果图：
+
+![](http://oih3a9o4n.bkt.clouddn.com/sjstatictableview_7.png)
+
+
+## License
+
+SJStaticTableView is released under the MIT license. 
 

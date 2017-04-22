@@ -10,6 +10,7 @@
 #import "SJStaticTableViewHeader.h"
 #import "Factory.h"//假数据
 
+
 @protocol SJStaticTableViewControllerDelegate <NSObject>
 
 @required
@@ -20,5 +21,8 @@
 
 @property (nonatomic, strong) SJStaticTableView *tableView;
 @property (nonatomic, strong) SJStaticTableViewDataSource *dataSource;
+
+
+- (SJStaticTableviewCellViewModel *)retrieveCellViewModelAtIndexPath:(NSIndexPath *)indexPath;
 
 @end

@@ -18,10 +18,10 @@
 @implementation SJSettingViewController
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
-    self.navigationItem.title = @"设置";
+     self.navigationItem.title = @"设置";
 }
-
 
 - (void)createDataSource
 {

@@ -21,7 +21,7 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
-     self.navigationItem.title = @"我";
+     self.navigationItem.title = @"我";    
 }
 
 - (void)createDataSource

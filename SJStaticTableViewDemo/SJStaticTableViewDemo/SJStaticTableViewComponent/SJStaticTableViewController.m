@@ -9,7 +9,10 @@
 #import "SJStaticTableViewController.h"
 #import "SJStaticTableViewDataSource.h"
 
+@interface SJStaticTableViewController()
 
+
+@end
 
 
 @implementation SJStaticTableViewController

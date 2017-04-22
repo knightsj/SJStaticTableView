@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
-    self.navigationItem.title = @"定制cell页面 - 同组";
+     self.navigationItem.title = @"定制cell页面 - 同组";
 }
 
 
