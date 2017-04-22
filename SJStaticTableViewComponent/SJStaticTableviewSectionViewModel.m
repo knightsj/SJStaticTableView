@@ -26,7 +26,7 @@
         _indicatorLeftLabelTextColor = SJIndicatorLeftTitleTextColor;
         _indicatorLeftImageSize = CGSizeMake(SJImgWidth, SJImgWidth);
         _indicatorLeftImageAndLabelGap = SJRightMiddleGap;
-        _cellViewModelsArray = cellViewModelsArray;        
+        _cellViewModelsArray = [cellViewModelsArray mutableCopy];
     }
     return self;
 }

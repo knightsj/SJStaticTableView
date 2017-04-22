@@ -20,6 +20,8 @@
 
 @implementation SJStaticTableViewDataSource
 
+#pragma mark- Public API
+
 - (instancetype)initWithViewModelsArray:(NSArray *)viewModelsArray configureBlock:(SJStaticCellConfigureBlock)block
 {
     self = [super init];
@@ -30,6 +32,7 @@
     return self;
 }
 
+#pragma mark- SJStaticTableViewDataSource
 - (SJStaticTableviewCellViewModel *)tableView:(UITableView *)tableview cellViewModelAtIndexPath:(NSIndexPath *)indexPath
 {
     if (self.viewModelsArray.count > indexPath.section) {
@@ -49,7 +52,7 @@
     return nil;
 }
 
-#pragma mark - Tableview data source
+#pragma mark - Tableview Datasource
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
@@ -64,7 +67,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
+
     SJStaticTableviewSectionViewModel *sectionViewModel = self.viewModelsArray[indexPath.section];
     SJStaticTableviewCellViewModel *cellViewModel = sectionViewModel.cellViewModelsArray[indexPath.row];
     

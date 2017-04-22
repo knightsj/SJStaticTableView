@@ -17,14 +17,35 @@
     
     //存在最左边的图片
     if (self.viewModel.leftImage) {
+        
         [self.contentView addSubview:self.leftImageView];
+        
+         self.leftImageView.image = self.viewModel.leftImage;
+         self.leftImageView.frame = CGRectMake(SJLeftGap, (self.viewModel.cellHeight - self.viewModel.leftImageSize.height)/2, self.viewModel.leftImageSize.width , self.viewModel.leftImageSize.height);
     }
+    
     
     //存在标题文字
     if (self.viewModel.leftTitle.length) {
+        
         [self.contentView addSubview:self.leftTitleLabel];
+        
+        self.leftTitleLabel.font = self.viewModel.leftLabelTextFont;
+        self.leftTitleLabel.textColor = self.viewModel.leftLabelTextColor;
+        self.leftTitleLabel.text = self.viewModel.leftTitle;
+        
+        CGFloat x = 0;
+        if (_leftImageView) {
+            x = CGRectGetMaxX(self.leftImageView.frame) + self.viewModel.leftImageAndLabelGap;
+        }else{
+            x = SJLeftGap;
+        }
+        
+        self.leftTitleLabel.frame = CGRectMake( x, (self.viewModel.cellHeight - self.viewModel.leftTitleLabelSize.height)/2, self.viewModel.leftTitleLabelSize.width, self.viewModel.leftTitleLabelSize.height);
     }
+    
 }
+
 
 
 #pragma mark- switch block
@@ -41,8 +62,7 @@
 - (UIImageView *)leftImageView
 {
     if (!_leftImageView) {
-         _leftImageView = [[UIImageView alloc] initWithImage:_viewModel.leftImage];
-         _leftImageView.frame = CGRectMake(SJLeftGap, (_viewModel.cellHeight - _viewModel.leftImageSize.height)/2, _viewModel.leftImageSize.width , _viewModel.leftImageSize.height);
+         _leftImageView = [[UIImageView alloc] init];
     }
     return _leftImageView;
 }
@@ -51,16 +71,6 @@
 {
     if (!_leftTitleLabel) {
          _leftTitleLabel= [[UILabel alloc] init];
-         _leftTitleLabel.font = _viewModel.leftLabelTextFont;
-         _leftTitleLabel.textColor = _viewModel.leftLabelTextColor;
-         _leftTitleLabel.text = _viewModel.leftTitle;
-         CGFloat x = 0;
-        if (_leftImageView) {
-            x = CGRectGetMaxX(_leftImageView.frame) + _viewModel.leftImageAndLabelGap;
-        }else{
-            x = SJLeftGap;
-        }
-         _leftTitleLabel.frame = CGRectMake( x, (_viewModel.cellHeight - _viewModel.leftTitleLabelSize.height)/2, _viewModel.leftTitleLabelSize.width, _viewModel.leftTitleLabelSize.height);
     }
     return _leftTitleLabel;
 }
@@ -82,33 +92,14 @@
     if (!_indicatorArrow) {
          _indicatorArrow = [[UIImageView alloc] initWithImage:[UIImage imageNamed:SJIndicatorArrow]];
          _indicatorArrow.frame = CGRectMake(SJScreenWidth - SJLeftGap - _indicatorArrow.bounds.size.width, (_viewModel.cellHeight - _indicatorArrow.bounds.size.height)/2, _indicatorArrow.bounds.size.width, _indicatorArrow.bounds.size.height);
-    }
-    
+    }    
     return _indicatorArrow;
 }
 
 - (UILabel *)indicatorLeftLabel
 {
     if (!_indicatorLeftLabel) {
-         _indicatorLeftLabel= [[UILabel alloc] init];
-         _indicatorLeftLabel.font = _viewModel.indicatorLeftLabelTextFont;
-         _indicatorLeftLabel.textColor = _viewModel.indicatorLeftLabelTextColor;
-         _indicatorLeftLabel.text = _viewModel.indicatorLeftTitle;
-        
-         if (!_viewModel.hasIndicatorImageAndLabel) {
-            _indicatorLeftLabel.frame = CGRectMake(_indicatorArrow.frame.origin.x - SJLeftGap - _viewModel.indicatorLeftLabelSize.width  , (_viewModel.cellHeight - _viewModel.indicatorLeftLabelSize.height)/2, _viewModel.indicatorLeftLabelSize.width, _viewModel.indicatorLeftLabelSize.height);
-         }else{
-            //同时存在
-            if (_viewModel.isImageFirst) {
-                
-                _indicatorLeftLabel.frame = CGRectMake(SJScreenWidth - SJLeftGap - _indicatorArrow.bounds.size.width - _viewModel.indicatorLeftImageAndLabelGap - _viewModel.indicatorLeftImageSize.width - SJLeftGap - _viewModel.indicatorLeftLabelSize.width, (_viewModel.cellHeight - _viewModel.indicatorLeftLabelSize.height)/2, _viewModel.indicatorLeftLabelSize.width, _viewModel.indicatorLeftLabelSize.height);
-                
-            }else{
-                
-                _indicatorLeftLabel.frame = CGRectMake(SJScreenWidth - SJLeftGap - _indicatorArrow.bounds.size.width - SJLeftGap - _viewModel.indicatorLeftLabelSize.width, (_viewModel.cellHeight - _viewModel.indicatorLeftLabelSize.height)/2, _viewModel.indicatorLeftLabelSize.width, _viewModel.indicatorLeftLabelSize.height);
-            }
-         }
-        
+         _indicatorLeftLabel= [[UILabel alloc] init];                 
     }
     return _indicatorLeftLabel;
 }
@@ -116,24 +107,7 @@
 - (UIImageView *)indicatorLeftImageView
 {
     if (!_indicatorLeftImageView) {
-         _indicatorLeftImageView = [[UIImageView alloc] initWithImage:_viewModel.indicatorLeftImage];
-        
-        if (!_viewModel.hasIndicatorImageAndLabel) {
-            _indicatorLeftImageView.frame = CGRectMake(_indicatorArrow.frame.origin.x - SJLeftGap - _viewModel.indicatorLeftImageSize.width, (_viewModel.cellHeight - _viewModel.indicatorLeftImageSize.height)/2, _viewModel.indicatorLeftImageSize.width , _viewModel.indicatorLeftImageSize.height);
-        }else{
-            
-            if (_viewModel.isImageFirst) {
-                
-                _indicatorLeftImageView.frame = CGRectMake(SJScreenWidth - SJLeftGap - _indicatorArrow.bounds.size.width - SJLeftGap - _viewModel.indicatorLeftImageSize.width, (_viewModel.cellHeight - _viewModel.indicatorLeftImageSize.height)/2, _viewModel.indicatorLeftImageSize.width, _viewModel.indicatorLeftImageSize.height);
-                
-            }else{
-                
-                _indicatorLeftImageView.frame = CGRectMake(SJScreenWidth - SJLeftGap - _indicatorArrow.bounds.size.width - _viewModel.indicatorLeftImageAndLabelGap - _viewModel.indicatorLeftLabelSize.width - SJLeftGap - _viewModel.indicatorLeftImageSize.width, (_viewModel.cellHeight - _viewModel.indicatorLeftImageSize.height)/2, _viewModel.indicatorLeftImageSize.width,_viewModel.indicatorLeftImageSize.height);
-                
-            }
-
-        }
-        
+         _indicatorLeftImageView = [[UIImageView alloc] init];        
     }
     return _indicatorLeftImageView;
 }
