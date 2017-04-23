@@ -483,15 +483,119 @@ typedef NS_ENUM(NSInteger, SSJStaticCellType) {
             viewModel.indicatorLeftTitle = responseDict[@"game_info"];
             
             //刷新tableview
-            [self.tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+           [self.tableView reloadData];
         }
     });
 ```
 
 效果图：
 
-![](http://oih3a9o4n.bkt.clouddn.com/sjstatictableview_7.png)
+![](http://oih3a9o4n.bkt.clouddn.com/sjstatictableview_8.png)
 
+## 5. 没有默认数据源的情况
+
+SJStaticViewController在创建的时候分为两种情况:
+
+```objc
+//SJStaticTableViewController.h
+typedef enum : NSUInteger {
+    
+    SJDefaultDataTypeExist,    //在表格生成之前就有数据（1. 完全不依赖网络请求，有现成的完整数据 2. 先生成默认数据，然后通过网络请求来更新数据并刷新表格）
+    SJDefaultDataTypeNone,     //无法生成默认数据，需要完全依赖网络请求，在拿到数据后，生成表格
+    
+}SJDefaultDataType;
+
+- (instancetype)initWithDefaultDataType:(SJDefaultDataType)defualtDataType;
+```
+
+```objc
+//SJStaticTableViewController.m
+- (instancetype)initWithDefaultDataType:(SJDefaultDataType)defualtDataType
+{
+    self = [super init];
+    if (self) {
+        self.defualtDataType = defualtDataType;
+    }
+    return self;
+}
+
+- (instancetype)init
+{
+    self = [self initWithDefaultDataType:SJDefaultDataTypeExist];//默认是SJDefaultDataTypeExist
+    return self;
+}
+```
+
+详细说明一下这两种情况：
+1. SJDefaultDataTypeExist：在表格生成之前就存在数据，可以是表格的全部数据，也可以是表格的默认数据（后来通过网络请求来更新部分数据，参考上一节）。
+2. SJDefaultDataTypeNone：意味着当前没有任何的默认数据可以使用，也就是无法生成tableview，需要在网络请求拿到数据后，再手动调用生成数据源，生成表格的方法。
+```objc
+- (void)viewDidLoad {
+    
+    [super viewDidLoad];
+    [self configureNav];
+    
+    //在能够提供给tableivew全部，或者部分数据源的情况下，可以先构造出tableview；
+    //否则，需要在网络请求结束后，手动调用configureTableView方法
+    if (self.defualtDataType == SJDefaultDataTypeExist) {
+        [self configureTableView];
+    }
+}
+
+//只有在SJDefaultDataTypeExist的时候才会自动调用，否则需要手动调用
+- (void)configureTableView
+{
+    [self createDataSource];//生成数据源
+    [self createTableView];//生成表格
+}
+```
+看一个例子，我们将表情页设置为``SJDefaultDataTypeNone``，那么就意味着我们需要手动调用``configureTableView``方法：
+
+```objc
+- (void)viewDidLoad {
+    
+    [super viewDidLoad];
+    
+     self.navigationItem.title = @"表情";
+    [self networkRequest];
+}
+
+
+- (void)networkRequest
+{
+    [MBProgressHUD showHUDAddedTo: self.view animated:YES];
+    
+    //模拟网络请求
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        
+        [MBProgressHUD hideHUDForView: self.view animated:YES];
+         self.modelsArray = [Factory emoticonPage];//网络请求后，将数据保存在self.modelsArray里面
+        [self configureTableView];//手动调用
+        
+    });
+}
+
+- (void)createDataSource
+{
+    self.dataSource = [[SJStaticTableViewDataSource alloc] initWithViewModelsArray:self.modelsArray configureBlock:^(SJStaticTableViewCell *cell, SJStaticTableviewCellViewModel *viewModel) {
+        
+        switch (viewModel.staticCellType) {
+                
+            case SJStaticCellTypeSystemAccessoryDisclosureIndicator:
+            {
+                [cell configureAccessoryDisclosureIndicatorCellWithViewModel:viewModel];
+            }
+                break;
+                
+            default:
+                break;
+        }
+    }];
+}
+```
+
+看一下效果图：
+![](http://oih3a9o4n.bkt.clouddn.com/sjstatictableview_9.png)
 
 ## License
 
