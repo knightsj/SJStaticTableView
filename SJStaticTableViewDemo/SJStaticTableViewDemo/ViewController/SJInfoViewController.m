@@ -18,12 +18,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
      self.navigationItem.title = @"个人信息";
-     self.modelsArray = [Factory infoPageData];
 }
+
+
 
 - (void)createDataSource
 {
-    self.dataSource = [[SJStaticTableViewDataSource alloc] initWithViewModelsArray:self.modelsArray configureBlock:^(SJStaticTableViewCell *cell, SJStaticTableviewCellViewModel *viewModel) {
+    self.dataSource = [[SJStaticTableViewDataSource alloc] initWithViewModelsArray:[Factory infoPageData] configureBlock:^(SJStaticTableViewCell *cell, SJStaticTableviewCellViewModel *viewModel) {
         
         switch (viewModel.staticCellType)
         {
@@ -38,6 +39,7 @@
         }
     }];
 }
+
 
 
 @end

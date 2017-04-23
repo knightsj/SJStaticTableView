@@ -18,7 +18,6 @@
     
     [super viewDidLoad];
      self.navigationItem.title = @"发现";
-     self.modelsArray = [Factory momentsPageData];
     [self networkRequest];
 }
 
@@ -47,14 +46,14 @@
             viewModel.indicatorLeftTitle = responseDict[@"game_info"];
             
             //刷新tableview
-            [self.tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+            [self.tableView reloadData];
         }
     });
 }
 
 - (void)createDataSource
 {
-    self.dataSource = [[SJStaticTableViewDataSource alloc] initWithViewModelsArray:self.modelsArray configureBlock:^(SJStaticTableViewCell *cell, SJStaticTableviewCellViewModel *viewModel) {
+    self.dataSource = [[SJStaticTableViewDataSource alloc] initWithViewModelsArray:[Factory momentsPageData] configureBlock:^(SJStaticTableViewCell *cell, SJStaticTableviewCellViewModel *viewModel) {
         
         switch (viewModel.staticCellType)
         {

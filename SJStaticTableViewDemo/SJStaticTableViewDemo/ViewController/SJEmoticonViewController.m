@@ -12,6 +12,8 @@
 
 @interface SJEmoticonViewController ()
 
+@property (nonatomic, readwrite, strong) NSArray *modelsArray;
+
 @end
 
 @implementation SJEmoticonViewController
@@ -21,11 +23,11 @@
     [super viewDidLoad];
     
      self.navigationItem.title = @"表情";
-    [self networdRequest];
+    [self networkRequest];
 }
 
 
-- (void)networdRequest
+- (void)networkRequest
 {
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     
@@ -33,7 +35,7 @@
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         
         [MBProgressHUD hideHUDForView:self.view animated:YES];
-         self.modelsArray = [Factory emoticonPage];
+         self.modelsArray = [Factory emoticonPage];//网络请求后，将数据保存在self.modelsArray里面
         [self configureTableView];
         
     });

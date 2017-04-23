@@ -18,13 +18,12 @@
     
     [super viewDidLoad];
      self.navigationItem.title = @"定制cell页面 - 同组";
-     self.modelsArray = [Factory customCellsOneSectionPageData];
 }
 
 
 - (void)createDataSource
 {
-    self.dataSource = [[SJStaticTableViewDataSource alloc] initWithViewModelsArray:self.modelsArray configureBlock:^(SJStaticTableViewCell *cell, SJStaticTableviewCellViewModel *viewModel) {
+    self.dataSource = [[SJStaticTableViewDataSource alloc] initWithViewModelsArray:[Factory customCellsOneSectionPageData] configureBlock:^(SJStaticTableViewCell *cell, SJStaticTableviewCellViewModel *viewModel) {
         
         switch (viewModel.staticCellType)
         {

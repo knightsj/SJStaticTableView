@@ -427,4 +427,39 @@
     return @[section1];
 }
 
++ (NSArray *)emoticonPage
+{
+    // ========== section 0
+    SJStaticTableviewCellViewModel *vm0 = [[SJStaticTableviewCellViewModel alloc] init];
+    vm0.leftImage = [UIImage imageNamed:@"emoji_1"];
+    vm0.leftTitle = @"眨眼";
+    
+    SJStaticTableviewCellViewModel *vm1 = [[SJStaticTableviewCellViewModel alloc] init];
+    vm1.leftImage = [UIImage imageNamed:@"emoji_2"];
+    vm1.leftTitle = @"伸舌";
+    
+    SJStaticTableviewCellViewModel *vm2 = [[SJStaticTableviewCellViewModel alloc] init];
+    vm2.leftImage = [UIImage imageNamed:@"emoji_3"];
+    vm2.leftTitle = @"哭笑";
+    
+    SJStaticTableviewCellViewModel *vm3 = [[SJStaticTableviewCellViewModel alloc] init];
+    vm3.leftImage = [UIImage imageNamed:@"emoji_4"];
+    vm3.leftTitle = @"大笑";
+    
+    SJStaticTableviewCellViewModel *vm4 = [[SJStaticTableviewCellViewModel alloc] init];
+    vm4.leftImage = [UIImage imageNamed:@"emoji_5"];
+    vm4.leftTitle = @"魔鬼";
+    
+    SJStaticTableviewCellViewModel *vm5 = [[SJStaticTableviewCellViewModel alloc] init];
+    vm5.leftImage = [UIImage imageNamed:@"emoji_6"];
+    vm5.leftTitle = @"大哭";
+    
+    
+    SJStaticTableviewSectionViewModel *section0 = [[SJStaticTableviewSectionViewModel alloc] initWithCellViewModelsArray: @[vm0,vm1,vm2,vm3,vm4,vm5]];
+    
+    
+    
+    return @[section0];
+}
+
 @end
