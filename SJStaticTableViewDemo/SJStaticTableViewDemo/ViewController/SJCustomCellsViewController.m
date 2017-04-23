@@ -17,13 +17,14 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
-    self.navigationItem.title = @"定制cell页面 - 分组";
+     self.navigationItem.title = @"定制cell页面 - 分组";
+     self.modelsArray = [Factory customCellsPageData];
 }
 
 
 - (void)createDataSource
 {
-    self.dataSource = [[SJStaticTableViewDataSource alloc] initWithViewModelsArray:[Factory customCellsPageData] configureBlock:^(SJStaticTableViewCell *cell, SJStaticTableviewCellViewModel *viewModel) {
+    self.dataSource = [[SJStaticTableViewDataSource alloc] initWithViewModelsArray:self.modelsArray configureBlock:^(SJStaticTableViewCell *cell, SJStaticTableviewCellViewModel *viewModel) {
         
         switch (viewModel.staticCellType)
         {

@@ -28,4 +28,7 @@
 //定制cell页 - 同组
 + (NSArray *)customCellsOneSectionPageData;
 
+//表情页
++ (NSArray *)emoticonPage;
+
 @end

@@ -10,6 +10,7 @@
 #import "SJStaticTableViewCell+MeAvatar.h"
 #import "SJSettingViewController.h"
 #import "SJInfoViewController.h"
+#import "SJEmoticonViewController.h"
 
 @interface SJMeViewController ()
 
@@ -21,12 +22,13 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
-     self.navigationItem.title = @"我";    
+     self.navigationItem.title = @"我";
+     self.modelsArray = [Factory mePageData];
 }
 
 - (void)createDataSource
 {
-    self.dataSource = [[SJStaticTableViewDataSource alloc] initWithViewModelsArray:[Factory mePageData] configureBlock:^(SJStaticTableViewCell *cell, SJStaticTableviewCellViewModel *viewModel) {
+    self.dataSource = [[SJStaticTableViewDataSource alloc] initWithViewModelsArray:self.modelsArray configureBlock:^(SJStaticTableViewCell *cell, SJStaticTableviewCellViewModel *viewModel) {
         
         switch (viewModel.staticCellType) {
                 
@@ -57,6 +59,15 @@
         {
             NSLog(@"跳转到详情页");
             SJInfoViewController *vc = [[SJInfoViewController alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+            
+            
+        case 5:
+        {
+            NSLog(@"跳转到表情页");
+            SJEmoticonViewController *vc = [[SJEmoticonViewController alloc] initWithDefaultDataType:SJDefaultDataTypeNone];
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;

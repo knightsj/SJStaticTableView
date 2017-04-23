@@ -20,6 +20,9 @@
 		CB67C3DA1EA9DF4D00B6125B /* SJStaticTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB67C3CA1EA9DF4D00B6125B /* SJStaticTableViewController.m */; };
 		CB67C3DB1EA9DF4D00B6125B /* SJStaticTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = CB67C3CC1EA9DF4D00B6125B /* SJStaticTableViewDataSource.m */; };
 		CB67C3DC1EA9DF4D00B6125B /* SJStaticTableviewSectionViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CB67C3CF1EA9DF4D00B6125B /* SJStaticTableviewSectionViewModel.m */; };
+		CB67C3DF1EAB820300B6125B /* SJEmoticonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB67C3DE1EAB820300B6125B /* SJEmoticonViewController.m */; };
+		CB67C3E31EAB82D500B6125B /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = CB67C3E21EAB82D500B6125B /* MBProgressHUD.m */; };
+		CB67C3E51EAB897000B6125B /* Emoji.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB67C3E41EAB896F00B6125B /* Emoji.xcassets */; };
 		CBC2D2741E7ED0BD002A5357 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC2D2731E7ED0BD002A5357 /* main.m */; };
 		CBC2D2771E7ED0BD002A5357 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC2D2761E7ED0BD002A5357 /* AppDelegate.m */; };
 		CBC2D27A1E7ED0BD002A5357 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC2D2791E7ED0BD002A5357 /* ViewController.m */; };
@@ -85,6 +88,11 @@
 		CB67C3CD1EA9DF4D00B6125B /* SJStaticTableViewHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJStaticTableViewHeader.h; sourceTree = "<group>"; };
 		CB67C3CE1EA9DF4D00B6125B /* SJStaticTableviewSectionViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJStaticTableviewSectionViewModel.h; sourceTree = "<group>"; };
 		CB67C3CF1EA9DF4D00B6125B /* SJStaticTableviewSectionViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJStaticTableviewSectionViewModel.m; sourceTree = "<group>"; };
+		CB67C3DD1EAB820300B6125B /* SJEmoticonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJEmoticonViewController.h; sourceTree = "<group>"; };
+		CB67C3DE1EAB820300B6125B /* SJEmoticonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJEmoticonViewController.m; sourceTree = "<group>"; };
+		CB67C3E11EAB82D500B6125B /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		CB67C3E21EAB82D500B6125B /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		CB67C3E41EAB896F00B6125B /* Emoji.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Emoji.xcassets; sourceTree = "<group>"; };
 		CBC2D26F1E7ED0BD002A5357 /* SJStaticTableViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SJStaticTableViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBC2D2731E7ED0BD002A5357 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CBC2D2751E7ED0BD002A5357 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -188,6 +196,15 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		CB67C3E01EAB82D500B6125B /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				CB67C3E11EAB82D500B6125B /* MBProgressHUD.h */,
+				CB67C3E21EAB82D500B6125B /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
 		CBC2D2661E7ED0BD002A5357 = {
 			isa = PBXGroup;
 			children = (
@@ -222,12 +239,14 @@
 		CBC2D2721E7ED0BD002A5357 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CB67C3E01EAB82D500B6125B /* MBProgressHUD */,
 				CBC2D2751E7ED0BD002A5357 /* AppDelegate.h */,
 				CBC2D2761E7ED0BD002A5357 /* AppDelegate.m */,
 				CBC2D2781E7ED0BD002A5357 /* ViewController.h */,
 				CBC2D2791E7ED0BD002A5357 /* ViewController.m */,
 				CBC2D27B1E7ED0BD002A5357 /* Main.storyboard */,
 				CBC2D2DB1E7ED16A002A5357 /* Discover.xcassets */,
+				CB67C3E41EAB896F00B6125B /* Emoji.xcassets */,
 				CBC2D2DC1E7ED16A002A5357 /* Images.xcassets */,
 				CBC2D2DD1E7ED16A002A5357 /* Me.xcassets */,
 				CBC2D2801E7ED0BD002A5357 /* LaunchScreen.storyboard */,
@@ -281,6 +300,8 @@
 				CBC2D2E51E7ED17D002A5357 /* SJCustomCellsViewController.m */,
 				CBC2D2E21E7ED17D002A5357 /* SJCustomCellsOneSectionViewController.h */,
 				CBC2D2E31E7ED17D002A5357 /* SJCustomCellsOneSectionViewController.m */,
+				CB67C3DD1EAB820300B6125B /* SJEmoticonViewController.h */,
+				CB67C3DE1EAB820300B6125B /* SJEmoticonViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -392,6 +413,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBC2D2DE1E7ED16A002A5357 /* Discover.xcassets in Resources */,
+				CB67C3E51EAB897000B6125B /* Emoji.xcassets in Resources */,
 				CBC2D2821E7ED0BD002A5357 /* LaunchScreen.storyboard in Resources */,
 				CB67C3D11EA9DF4D00B6125B /* arrow@2x.png in Resources */,
 				CBC2D2E01E7ED16A002A5357 /* Me.xcassets in Resources */,
@@ -438,12 +460,14 @@
 				CB67C3D71EA9DF4D00B6125B /* SJStaticTableViewCell+MeAvatar.m in Sources */,
 				CBC2D2741E7ED0BD002A5357 /* main.m in Sources */,
 				CB67C3D31EA9DF4D00B6125B /* SJStaticTableViewCell+AccessoryDisclosureIndicator.m in Sources */,
+				CB67C3E31EAB82D500B6125B /* MBProgressHUD.m in Sources */,
 				CBC2D2EE1E7ED17D002A5357 /* SJCustomCellsOneSectionViewController.m in Sources */,
 				CBC2D2EF1E7ED17D002A5357 /* SJCustomCellsViewController.m in Sources */,
 				CB67C3DB1EA9DF4D00B6125B /* SJStaticTableViewDataSource.m in Sources */,
 				CB67C3DC1EA9DF4D00B6125B /* SJStaticTableviewSectionViewModel.m in Sources */,
 				CB67C3D91EA9DF4D00B6125B /* SJStaticTableviewCellViewModel.m in Sources */,
 				CBC2D2D61E7ED11B002A5357 /* SJTabBarController.m in Sources */,
+				CB67C3DF1EAB820300B6125B /* SJEmoticonViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

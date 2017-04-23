@@ -17,12 +17,17 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
-    self.navigationItem.title = @"发现";
-    
+     self.navigationItem.title = @"发现";
+     self.modelsArray = [Factory momentsPageData];
+    [self networkRequest];
+}
+
+- (void)networkRequest
+{
     //模拟网络请求
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         
-        //请求成功x
+        //请求成功
         NSDictionary *responseDict = @{@"title_info":@"新游戏上架啦",
                                        @"title_icon":@"game_1",
                                        @"game_info":@"一起来玩斗地主呀！",
@@ -47,10 +52,9 @@
     });
 }
 
-
 - (void)createDataSource
 {
-    self.dataSource = [[SJStaticTableViewDataSource alloc] initWithViewModelsArray:[Factory momentsPageData] configureBlock:^(SJStaticTableViewCell *cell, SJStaticTableviewCellViewModel *viewModel) {
+    self.dataSource = [[SJStaticTableViewDataSource alloc] initWithViewModelsArray:self.modelsArray configureBlock:^(SJStaticTableViewCell *cell, SJStaticTableviewCellViewModel *viewModel) {
         
         switch (viewModel.staticCellType)
         {
